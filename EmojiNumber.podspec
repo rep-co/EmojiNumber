@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author                = { "Username" => "mov4d.community@gmail.com" }
   s.platform              = :ios, '7.0'
   s.source                = { :git => "https://github.com/rep-co/EmojiNumber.git", :tag => s.version.to_s }
-  s.source_files          = 'EmojiNumber/*.{h,m}'
+  s.source_files          = 'EmojiNumber/*.{h,m,swift}'
   s.public_header_files   = 'EmojiNumber/*.h'
   s.framework             = 'Foundation'
   s.requires_arc          = true
