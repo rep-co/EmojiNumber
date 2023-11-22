@@ -6,15 +6,15 @@
 import Foundation
 
 public struct EmojiNumber: ExpressibleByIntegerLiteral {
+    
+    public var emoji: String? {
+        return getEmoji()
+    }
 
     private let number: Int
     
     public init(integerLiteral value: Int) {
         self.number = abs(value)
-    }
-    
-    public var emoji: String? {
-        return getEmoji()
     }
     
     private func getEmoji() -> String? {
